@@ -1,4 +1,4 @@
-import LogoSneakes from "@/assets/images/logo.svg";
+import LogoLanuza from "@/assets/images/logo-dark.png";
 import AvatarImage from "@/assets/images/image-avatar.png";
 import MenuIcon from "@/components/icons/MenuIcon";
 import CartIcon from "@/components/icons/CartIcon";
@@ -20,13 +20,13 @@ const MainHeader = () => {
     return (
         <>
         <header className=" container  mx-auto  flex items-center
-        gap-8 ">
+        gap-8 p-4 md:p-0">
 
         <button className="md:hidden" onClick={handleOpenMenu}>
             <MenuIcon />
         </button>
-        <img src={LogoSneakes} alt="Logo sneakers"
-         className="mr-auto mb-1 h-5 md:mr-0"/>
+        <img src={LogoLanuza} alt="Logo lanuza"
+         className="mr-auto mb-1 h-10 md:mr-0"/>
 
         <nav className={navClass}>
          <button className="mb-12 md:hidden" onClick={handleCloseMenu}>
