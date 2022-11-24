@@ -11,7 +11,7 @@ const MainHeader = () => {
         "hidden font-bold md:static md:mr-auto md:flex md:h-auto md:flex-row md:gap-4 md:p-0 ");
 
      const handleOpenMenu = () => {
-        setNavClass("absolute top-0 left-0 flex h-full w-4/5 flex-col gap-y-[21px] bg-white p-8 font-bold md:stactic md:mr-auto md:flex md:flex-row  md:gap-4 md:p-0 md:gap-y-[21px] md:h-auto");
+        setNavClass("absolute top-0 left-0 flex h-full w-4/5 z-10 flex-col gap-y-[21px] bg-white p-8 font-bold md:stactic md:mr-auto md:flex md:flex-row  md:gap-4 md:p-0 md:gap-y-[21px] md:h-auto");
      };
 
      const handleCloseMenu = () => {
@@ -20,7 +20,7 @@ const MainHeader = () => {
     return (
         <>
         <header className=" container  mx-auto  flex items-center
-        gap-8 p-4 md:p-0">
+        gap-8 p-4 md:p-0 ">
 
         <button className="md:hidden" onClick={handleOpenMenu}>
             <MenuIcon />
@@ -32,11 +32,11 @@ const MainHeader = () => {
          <button className="mb-12 md:hidden" onClick={handleCloseMenu}>
             <CloseIcon />
          </button>
-            <NavLinkHeader text="Collections" />
-            <NavLinkHeader text="Men" />
-            <NavLinkHeader text="Woman" />
-            <NavLinkHeader text="About" />
-            <NavLinkHeader text="Contact" />
+            <NavLinkHeader text="Productos" />
+            <NavLinkHeader text="Ejes" />
+            <NavLinkHeader text="Microsoft" />
+            <NavLinkHeader text="Nosotros" />
+            <NavLinkHeader text="Contacto" />
         </nav>
         <div  className="flex gap-4">
             <button>
