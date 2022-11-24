@@ -1,11 +1,11 @@
-import MainHeader from "@/components/header/MainHeder";
-import MainProduct from "./components/product/MainProduct";
+import IndexHeder from "@/components/header/IndexHeder";
+import IndexProduct from "./components/product/IndexProduct";
 
 
 const App = () => {
     return(<>
-         <MainHeader />
-         <MainProduct />
+         <IndexHeder />
+         <IndexProduct />
     </>)
 }
 export default App;

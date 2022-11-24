@@ -41,7 +41,7 @@ const handleClickPrev = () => {
             <img
                  src={ARRAY_IMGS[index]}
                  alt=""
-                 className="aspect-[16/10] w-full md:cursor-pointer md:aspect-[16/10] md:rounded-md"
+                 className="aspect-[16/10] w-full md:cursor-pointer md:aspect-[16/16] xl:aspect-[16/10] 2xl:max-h-[600] md:rounded-md"
                  onClick={handleOpenModal}
                   />
 

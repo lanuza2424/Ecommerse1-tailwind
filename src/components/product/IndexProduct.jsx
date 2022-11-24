@@ -1,5 +1,5 @@
-import DetailsProduct from "@/components/product/col-details/DetailsProduct";
-import MainImages from "@/components/product/col-images/MainImages";
+import DetailsProduct from "@/components/product/details/DetailsProduct";
+import GalleryProduct from "@/components/product/gallery/GalleryProduct";
 
 
 import imgLenovoCopia1 from  '@/assets/images/lenovo1 - copia.jpg';
@@ -20,8 +20,9 @@ const ARRAY_IMG_COPIA = [imgLenovo1, imgLenovo2, imgLenovo3, imgLenovo4]
 const MainProduct = () => {
     return (
         <main className="grid grid-cols-1 items-center gap-8 md:container md:mx-auto md:min-h-[calc(100vh-88px-3px)] md:grid-cols-2">
-        <MainImages ARRAY_IMGS={ARRAY_IMGS} 
-        ARRAY_IMG_COPIA={ARRAY_IMG_COPIA}
+        <GalleryProduct 
+             ARRAY_IMGS={ARRAY_IMGS} 
+             ARRAY_IMG_COPIA={ARRAY_IMG_COPIA}
          />
         <DetailsProduct />
     </main>
